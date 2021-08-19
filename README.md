@@ -61,6 +61,6 @@ $ uvicorn qoute:app
 ~~~
 
 ## 4) Using of app
-1) Use link http://127.0.0.1/
+1) Use link http://127.0.0.1:8000/
 1) Click button "Get Quote"
 2) Get inspiration from quote!
