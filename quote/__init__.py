@@ -2,7 +2,7 @@ import json
 from random import choice
 
 from fastapi import FastAPI
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
 app = FastAPI(
@@ -23,3 +23,8 @@ with open('./quote/data.json') as file:
 @app.get('/quote', response_class=JSONResponse)
 def quote() -> dict:
     return choice(quotes)
+
+
+@app.get('/', response_class=RedirectResponse)
+def main() -> RedirectResponse:
+    return RedirectResponse('/static/index.html')

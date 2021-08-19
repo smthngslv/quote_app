@@ -11,6 +11,9 @@ const getQuote = async () => {
         "afterbegin",
         "" +
         "<div class=\"card\">\n" +
+        "    <div class=\"card-header\">\n" +
+        "        " + myJson["author"] + "\n" +
+        "    </div>" +
         "    <div class=\"card-body\">\n" +
         "        " + myJson["quote"] + "\n" +
         "    </div>\n" +
