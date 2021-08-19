@@ -9,12 +9,33 @@ If you need some quote for inspiration, you can use this app. Just click the but
 
 
 ## 2) Requirements
-* [Python 3](https://python.org) (**Python 3.9** preffered)
+* [Python 3](python.org) (**Python 3.9** preffered)
 * Python PIP
 * Python Venv
 * Any browser
 
 ## 3) Installation
+
+### 1) Requirements installation
+
+* Linux:
+    ~~~
+    $ apt-get install python
+    $ apt-get install python-pip
+    $ apt-get install python-venv
+    ~~~
+* MAC:
+    ~~~
+    $ brew install python
+    $ brew install python-pip
+    $ brew install python-venv
+    ~~~
+* Windows: \
+    [Python](https://www.python.org/downloads/release/python-396/) \
+    Python PIP and Python Venv are installing with Python
+    
+
+### 2) App installation
 
 1) Clone source code:
 ~~~
@@ -39,7 +60,7 @@ $ pip install -r requirements.txt
 $ uvicorn qoute:app
 ~~~
 
-### 4) Using of app
-
+## 4) Using of app
+1) Use link http://127.0.0.1/
 1) Click button "Get Quote"
 2) Get inspiration from quote!
